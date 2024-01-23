@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import SearchCategory from "./components/SearchCategory";
 import axios from "axios";
+import QuoteContent from "./components/QuoteContent";
 
 const API_URL = "https://api.api-ninjas.com/v1/quotes";
 
@@ -32,6 +33,7 @@ function App() {
         setValue={setValue}
         handleSubmit={handleSubmit}
       />
+      <QuoteContent data={data} />
     </>
   );
 }
